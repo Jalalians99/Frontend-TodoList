@@ -17,11 +17,13 @@ function TodoList() {
     {
       field: "description",
       filter: "agTextColumnFilter",
+      floatingFilter: true,
       headerName: "Description",
     },
     {
       field: "duedate",
       filter: "agDateColumnFilter",
+      floatingFilter: true,
       sortable: false,
       headerName: "Date",
     },
@@ -30,6 +32,7 @@ function TodoList() {
       editable: true,
       headerName: "Priority",
       filter: "agTextColumnFilter",
+      floatingFilter: true,
       cellStyle: (params) =>
         params.value === "High" ? { color: "red" } : { color: "Black" },
     },
